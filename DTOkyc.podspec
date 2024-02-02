@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DTOkyc"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "DTOkyc is for doing offline-kyc."
 
   # This description is used to generate tags and improve search results.
@@ -73,7 +73,7 @@ DTOkyc is for doing offline-kyc. It is same like doing in UIDAI website
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
-    spec.swift_version = '5.0'
+    spec.swift_version = '5.7'
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -96,8 +96,8 @@ DTOkyc is for doing offline-kyc. It is same like doing in UIDAI website
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
-  spec.source_files = 'DTOkyc.framework/Headers/*.h'
-  spec.public_header_files = "DTOkyc.framework/Headers/*.h"
+  #spec.source_files = 'DTOkyc.framework/Headers/*.h'
+  #spec.public_header_files = "DTOkyc.framework/Headers/*.h"
   spec.ios.vendored_frameworks = "DTOkyc.framework"
 
 

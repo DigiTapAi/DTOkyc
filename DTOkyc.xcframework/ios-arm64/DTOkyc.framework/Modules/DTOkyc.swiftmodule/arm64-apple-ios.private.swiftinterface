@@ -10,34 +10,68 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
-public enum DTEnvironment : Swift.String {
-  case PRODUCTION
-  case UAT
-  case STAGE
-  case DEV
+@_hasMissingDesignatedInitializers @objc public class DTException : ObjectiveC.NSObject, Swift.Error {
+  @objc public func getErrorCode() -> Foundation.NSNumber?
+  @objc public func getErrorMessage() -> Foundation.NSString?
+  @objc deinit
+}
+public enum ErrorCode : Swift.Int {
+  case INVALID_INPUT, INIT_NOT_CALLED, USER_CANCELLED, INTERNAL_ERROR, INTERNET_NOT_AVAILABLE, SERVER_ERROR, ERROR_UIDAI, AUTHENTICATION_FAILED
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum ErrorMessage : Swift.String {
+  case INVALID_INPUT
+  case INIT_NOT_CALLED
+  case USER_CANCELLED
+  case INTERNAL_ERROR
+  case SERVER_ERROR
+  case INTERNET_NOT_AVAILABLE
+  case ERROR_UIDAI
+  case AUTHENTICATION_FAILED
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
-@_hasMissingDesignatedInitializers open class ConstantNotification {
-  public enum NotificationKey {
-    public static let DTOkycNotificationKey: Swift.String
-  }
+@_inheritsConvenienceInitializers @objc public class DTOkycSDK : ObjectiveC.NSObject {
+  @objc public static func initialize(clientId: Swift.String, clientSecret: Swift.String, environment: DTOkyc.DTEnvironment) throws
+  @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DTOkycVC : UIKit.UIViewController {
+@objc public enum DTEnvironment : Swift.Int {
+  case PRODUCTION
+  case UAT
+  case STAGE
+  case DEV
+}
+extension DTOkyc.DTEnvironment : Swift.RawRepresentable {
+  public typealias RawValue = Swift.String
+  public init?(rawValue: DTOkyc.DTEnvironment.RawValue)
+  public var rawValue: DTOkyc.DTEnvironment.RawValue {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class DTOkycVC : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public var clientSecret: Swift.String
-  @_Concurrency.MainActor(unsafe) public var phoneoremail: Swift.String
   @_Concurrency.MainActor(unsafe) public var clientId: Swift.String
   @_Concurrency.MainActor(unsafe) public var environment: DTOkyc.DTEnvironment!
+  @objc @_Concurrency.MainActor(unsafe) public static func start(_ callingVC: UIKit.UIViewController, clientRefId: Swift.String, completionHandler: @escaping (DTOkyc.DTException?, [Swift.String : Any]?) -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+extension DTOkyc.ErrorCode : Swift.Equatable {}
+extension DTOkyc.ErrorCode : Swift.Hashable {}
+extension DTOkyc.ErrorCode : Swift.RawRepresentable {}
+extension DTOkyc.ErrorMessage : Swift.Equatable {}
+extension DTOkyc.ErrorMessage : Swift.Hashable {}
+extension DTOkyc.ErrorMessage : Swift.RawRepresentable {}
 extension DTOkyc.DTEnvironment : Swift.Equatable {}
 extension DTOkyc.DTEnvironment : Swift.Hashable {}
-extension DTOkyc.DTEnvironment : Swift.RawRepresentable {}

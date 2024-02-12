@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/DTOkyc-Swift.h</key>
 		<data>
-		uHG1WkJ0OApY/5c6BfZ9gBX2biQ=
+		dEuodwEU25Q+YA9f3zIHwVcZsj0=
 		</data>
 		<key>Headers/DTOkyc.h</key>
 		<data>
@@ -86,11 +86,11 @@
 		</data>
 		<key>Modules/DTOkyc.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		x43K2l53lJDVO9YPOf7Kn3DQzb0=
+		8n/xm7k6teTx/Vxz6dfZwJVFmIw=
 		</data>
 		<key>Modules/DTOkyc.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		smW/Ya5QZLnXLcnEWPi/ne/z9EA=
+		NyyQu08Sf4cZSYNsY1mrtsfrAg0=
 		</data>
 		<key>Modules/DTOkyc.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -98,19 +98,19 @@
 		</data>
 		<key>Modules/DTOkyc.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		smW/Ya5QZLnXLcnEWPi/ne/z9EA=
+		NyyQu08Sf4cZSYNsY1mrtsfrAg0=
 		</data>
 		<key>Modules/DTOkyc.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lAMlA2Z9k7osN7jDFx6UFpDl37A=
+		McgdR2kP7I4ynHFqjW7x3Q42kRA=
 		</data>
 		<key>Modules/DTOkyc.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		x43K2l53lJDVO9YPOf7Kn3DQzb0=
+		8n/xm7k6teTx/Vxz6dfZwJVFmIw=
 		</data>
 		<key>Modules/DTOkyc.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		LUoNhvfD2zwlvty4sumyuxodsnc=
+		giFCD+rYQ6lmPol31zaQ/57OVfw=
 		</data>
 		<key>Modules/DTOkyc.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -118,11 +118,11 @@
 		</data>
 		<key>Modules/DTOkyc.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LUoNhvfD2zwlvty4sumyuxodsnc=
+		giFCD+rYQ6lmPol31zaQ/57OVfw=
 		</data>
 		<key>Modules/DTOkyc.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+wOdOt4h9x4Bxij1g6Pp0E/yD3w=
+		l3pIVMQ+TUWnM7PLDD0NqAQ1+A4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -249,7 +249,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PLmw8cTOGuuJslrLzYnE/dN0Nwuam+jnxxE5fiRVRzQ=
+			e40kmd+YZJ8QjuSglJgUdX5wH2tP1H2G09S9iFBoHDI=
 			</data>
 		</dict>
 		<key>Headers/DTOkyc.h</key>
@@ -284,14 +284,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TH3mVcXmWjYqOWeWJDxiIlBmEUMR7DYdpJRenl7KLqA=
+			NxNyraajtXF51DYexxOD8UZNI6LdRGxQPm5906fMXNY=
 			</data>
 		</dict>
 		<key>Modules/DTOkyc.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vc5qR05XR0YOeSRyj81JJJl7jT5AohOjanPNGtwKihA=
+			LL2I+6zjev90q8e+njLL6P9qVxgvw9nIpH+gcfZFN3U=
 			</data>
 		</dict>
 		<key>Modules/DTOkyc.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -305,28 +305,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vc5qR05XR0YOeSRyj81JJJl7jT5AohOjanPNGtwKihA=
+			LL2I+6zjev90q8e+njLL6P9qVxgvw9nIpH+gcfZFN3U=
 			</data>
 		</dict>
 		<key>Modules/DTOkyc.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xb8xjzEb35AAcsnJMzoW32/l8jQbbb2SGLkH/tPBR3I=
+			AyocHnNdddKcjAgBhH+g7JJVvIaoRmocYL/1+hcjXeU=
 			</data>
 		</dict>
 		<key>Modules/DTOkyc.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TH3mVcXmWjYqOWeWJDxiIlBmEUMR7DYdpJRenl7KLqA=
+			NxNyraajtXF51DYexxOD8UZNI6LdRGxQPm5906fMXNY=
 			</data>
 		</dict>
 		<key>Modules/DTOkyc.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jyUiOmjCuJlnbbf6Kw96HQWhFe1IH0wJuz9IdE872Gk=
+			9DigUVXiC19FCIqoP43L8P18RZkeErArkZX7qAES/hw=
 			</data>
 		</dict>
 		<key>Modules/DTOkyc.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -340,14 +340,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jyUiOmjCuJlnbbf6Kw96HQWhFe1IH0wJuz9IdE872Gk=
+			9DigUVXiC19FCIqoP43L8P18RZkeErArkZX7qAES/hw=
 			</data>
 		</dict>
 		<key>Modules/DTOkyc.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MP07bdQhRv5YWEC9jI8euLntiMeCasNpqEmCtBIcVpE=
+			UIL9x8pgx3Www8FDmV8AWVcRq9arh56xKTpgM2XCG4E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

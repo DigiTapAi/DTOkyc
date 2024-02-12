@@ -230,6 +230,8 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -251,13 +253,38 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+typedef SWIFT_ENUM(NSInteger, DTEnvironment, open) {
+  DTEnvironmentPRODUCTION = 0,
+  DTEnvironmentUAT = 1,
+  DTEnvironmentSTAGE = 2,
+  DTEnvironmentDEV = 3,
+};
+
+@class NSNumber;
 @class NSString;
+
+SWIFT_CLASS("_TtC6DTOkyc11DTException")
+@interface DTException : NSObject
+- (NSNumber * _Nullable)getErrorCode SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getErrorMessage SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC6DTOkyc9DTOkycSDK")
+@interface DTOkycSDK : NSObject
++ (BOOL)initializeWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret environment:(enum DTEnvironment)environment error:(NSError * _Nullable * _Nullable)error;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSBundle;
 @class NSCoder;
 
 /// Implements the functionality to Show the paperless xml option to suer
 SWIFT_CLASS("_TtC6DTOkyc8DTOkycVC")
 @interface DTOkycVC : UIViewController
++ (void)start:(UIViewController * _Nonnull)callingVC clientRefId:(NSString * _Nonnull)clientRefId completionHandler:(void (^ _Nonnull)(DTException * _Nullable, NSDictionary<NSString *, id> * _Nullable))completionHandler;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -506,6 +533,8 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -527,13 +556,38 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+typedef SWIFT_ENUM(NSInteger, DTEnvironment, open) {
+  DTEnvironmentPRODUCTION = 0,
+  DTEnvironmentUAT = 1,
+  DTEnvironmentSTAGE = 2,
+  DTEnvironmentDEV = 3,
+};
+
+@class NSNumber;
 @class NSString;
+
+SWIFT_CLASS("_TtC6DTOkyc11DTException")
+@interface DTException : NSObject
+- (NSNumber * _Nullable)getErrorCode SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getErrorMessage SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC6DTOkyc9DTOkycSDK")
+@interface DTOkycSDK : NSObject
++ (BOOL)initializeWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret environment:(enum DTEnvironment)environment error:(NSError * _Nullable * _Nullable)error;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSBundle;
 @class NSCoder;
 
 /// Implements the functionality to Show the paperless xml option to suer
 SWIFT_CLASS("_TtC6DTOkyc8DTOkycVC")
 @interface DTOkycVC : UIViewController
++ (void)start:(UIViewController * _Nonnull)callingVC clientRefId:(NSString * _Nonnull)clientRefId completionHandler:(void (^ _Nonnull)(DTException * _Nullable, NSDictionary<NSString *, id> * _Nullable))completionHandler;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

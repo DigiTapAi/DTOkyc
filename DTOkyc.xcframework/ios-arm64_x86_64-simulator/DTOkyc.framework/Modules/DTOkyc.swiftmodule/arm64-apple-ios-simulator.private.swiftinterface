@@ -1,15 +1,18 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DTOkyc
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DTOkyc
 @_exported import DTOkyc
+import DeveloperToolsSupport
 import Foundation
 import QuartzCore
 import Swift
+import SwiftUI
+import SystemConfiguration
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers @objc public class DTException : ObjectiveC.NSObject, Swift.Error {
   @objc public func getErrorCode() -> Foundation.NSNumber?
   @objc public func getErrorMessage() -> Foundation.NSString?
@@ -40,6 +43,7 @@ public enum ErrorMessage : Swift.String {
 }
 @_inheritsConvenienceInitializers @objc public class DTOkycSDK : ObjectiveC.NSObject {
   @objc public static func initialize(clientId: Swift.String, clientSecret: Swift.String, environment: DTOkyc.DTEnvironment) throws
+  @objc public static func initialize(token: Swift.String, environment: DTOkyc.DTEnvironment) throws
   @objc override dynamic public init()
   @objc deinit
 }
@@ -57,8 +61,6 @@ extension DTOkyc.DTEnvironment : Swift.RawRepresentable {
   }
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class DTOkycVC : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public var clientSecret: Swift.String
-  @_Concurrency.MainActor(unsafe) public var clientId: Swift.String
   @_Concurrency.MainActor(unsafe) public var environment: DTOkyc.DTEnvironment!
   @objc @_Concurrency.MainActor(unsafe) public static func start(_ callingVC: UIKit.UIViewController, clientRefId: Swift.String, completionHandler: @escaping (DTOkyc.DTException?, [Swift.String : Any]?) -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()

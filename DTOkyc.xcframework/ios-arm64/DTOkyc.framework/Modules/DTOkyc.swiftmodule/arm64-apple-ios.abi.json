@@ -33,6 +33,13 @@
       },
       {
         "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "DTOkyc"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1214,6 +1221,43 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(token:environment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DTEnvironment",
+                "printedName": "DTOkyc.DTEnvironment",
+                "usr": "c:@M@DTOkyc@E@DTEnvironment"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DTOkyc@objc(cs)DTOkycSDK(cm)initializeWithToken:environment:error:",
+            "mangledName": "$s6DTOkyc0A3SDKC10initialize5token11environmentySS_AA13DTEnvironmentOtKFZ",
+            "moduleName": "DTOkyc",
+            "static": true,
+            "objc_name": "initializeWithToken:environment:error:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -1716,182 +1760,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "clientSecret",
-            "printedName": "clientSecret",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6DTOkyc0A2VCC12clientSecretSSvp",
-            "mangledName": "$s6DTOkyc0A2VCC12clientSecretSSvp",
-            "moduleName": "DTOkyc",
-            "declAttributes": [
-              "Custom",
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6DTOkyc0A2VCC12clientSecretSSvg",
-                "mangledName": "$s6DTOkyc0A2VCC12clientSecretSSvg",
-                "moduleName": "DTOkyc",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6DTOkyc0A2VCC12clientSecretSSvs",
-                "mangledName": "$s6DTOkyc0A2VCC12clientSecretSSvs",
-                "moduleName": "DTOkyc",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6DTOkyc0A2VCC12clientSecretSSvM",
-                "mangledName": "$s6DTOkyc0A2VCC12clientSecretSSvM",
-                "moduleName": "DTOkyc",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "clientId",
-            "printedName": "clientId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6DTOkyc0A2VCC8clientIdSSvp",
-            "mangledName": "$s6DTOkyc0A2VCC8clientIdSSvp",
-            "moduleName": "DTOkyc",
-            "declAttributes": [
-              "Custom",
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6DTOkyc0A2VCC8clientIdSSvg",
-                "mangledName": "$s6DTOkyc0A2VCC8clientIdSSvg",
-                "moduleName": "DTOkyc",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6DTOkyc0A2VCC8clientIdSSvs",
-                "mangledName": "$s6DTOkyc0A2VCC8clientIdSSvs",
-                "moduleName": "DTOkyc",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6DTOkyc0A2VCC8clientIdSSvM",
-                "mangledName": "$s6DTOkyc0A2VCC8clientIdSSvM",
-                "moduleName": "DTOkyc",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "environment",
             "printedName": "environment",
             "children": [
@@ -1915,9 +1783,9 @@
             "mangledName": "$s6DTOkyc0A2VCC11environmentAA13DTEnvironmentOSgvp",
             "moduleName": "DTOkyc",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "HasStorage",
+              "Custom",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -2323,6 +2191,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -2359,1123 +2234,1235 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DTOkyc"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DTOkyc"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DTOkyc"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "DTOkyc"
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 1418,
+      "offset": 1514,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 1446,
+      "offset": 1542,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 1466,
+      "offset": 1562,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
       "kind": "StringLiteral",
-      "offset": 1489,
+      "offset": 1585,
       "length": 6,
       "value": "\"1234\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 1536,
+      "offset": 1632,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 1584,
+      "offset": 1680,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/AdharDetailVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 11446,
+      "offset": 12320,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 189,
       "length": 11,
       "value": "\"DTOkyc.DTException\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 685,
       "length": 4,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 695,
       "length": 15,
       "value": "1002"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 716,
       "length": 14,
       "value": "1003"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 736,
       "length": 14,
       "value": "1004"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 756,
       "length": 22,
       "value": "1005"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 784,
       "length": 12,
       "value": "1006"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 802,
       "length": 11,
       "value": "1007"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 819,
       "length": 21,
       "value": "1008"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 685,
       "length": 4,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 695,
       "length": 15,
       "value": "1002"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 716,
       "length": 14,
       "value": "1003"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 736,
       "length": 14,
       "value": "1004"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 756,
       "length": 22,
       "value": "1005"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 784,
       "length": 12,
       "value": "1006"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 802,
       "length": 11,
       "value": "1007"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 819,
       "length": 21,
       "value": "1008"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 685,
       "length": 4,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 695,
       "length": 15,
       "value": "1002"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 716,
       "length": 14,
       "value": "1003"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 736,
       "length": 14,
       "value": "1004"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 756,
       "length": 22,
       "value": "1005"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 784,
       "length": 12,
       "value": "1006"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 802,
       "length": 11,
       "value": "1007"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "IntegerLiteral",
       "offset": 819,
       "length": 21,
       "value": "1008"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 902,
       "length": 15,
       "value": "\"Invalid Input\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 945,
       "length": 22,
       "value": "\"Init not called yet.\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 994,
       "length": 16,
       "value": "\"User Cancelled\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 1037,
       "length": 37,
       "value": "\"Internal Error, Try after some time\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 1099,
       "length": 35,
       "value": "\"Server Error, Try after some time\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 1169,
       "length": 24,
       "value": "\"Internet not connected\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 1217,
       "length": 18,
       "value": "\"Error from UIDAI\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 1269,
       "length": 23,
       "value": "\"Authentication failed\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 902,
       "length": 15,
       "value": "\"Invalid Input\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 945,
       "length": 22,
       "value": "\"Init not called yet.\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 994,
       "length": 16,
       "value": "\"User Cancelled\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 1037,
       "length": 37,
       "value": "\"Internal Error, Try after some time\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 1099,
       "length": 35,
       "value": "\"Server Error, Try after some time\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 1169,
       "length": 24,
       "value": "\"Internet not connected\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 1217,
       "length": 18,
       "value": "\"Error from UIDAI\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Exception\/DTException.swift",
       "kind": "StringLiteral",
       "offset": 1269,
       "length": 23,
       "value": "\"Authentication failed\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Extension\/Extension+String.swift",
+      "kind": "FloatLiteral",
+      "offset": 2838,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
       "kind": "StringLiteral",
       "offset": 287,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
       "kind": "StringLiteral",
       "offset": 336,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
       "kind": "StringLiteral",
       "offset": 378,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
       "kind": "StringLiteral",
       "offset": 1179,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
       "kind": "StringLiteral",
       "offset": 1220,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
       "kind": "StringLiteral",
       "offset": 1253,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
       "kind": "StringLiteral",
       "offset": 1285,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
       "kind": "StringLiteral",
       "offset": 1326,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
       "kind": "StringLiteral",
       "offset": 1354,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Model\/PaperlessModel.swift",
       "kind": "StringLiteral",
       "offset": 1380,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Utils\/UIDAIUtil.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Utils\/UIDAIUtil.swift",
       "kind": "StringLiteral",
       "offset": 208,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Utils\/UIDAIUtil.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Utils\/UIDAIUtil.swift",
       "kind": "StringLiteral",
       "offset": 242,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Utils\/UIDAIUtil.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Utils\/UIDAIUtil.swift",
       "kind": "StringLiteral",
       "offset": 275,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Utils\/UIDAIUtil.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Utils\/UIDAIUtil.swift",
       "kind": "StringLiteral",
       "offset": 300,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Utils\/UIDAIUtil.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Utils\/UIDAIUtil.swift",
       "kind": "StringLiteral",
       "offset": 334,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Utils\/UIDAIUtil.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Utils\/UIDAIUtil.swift",
       "kind": "IntegerLiteral",
       "offset": 365,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 777,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 791,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 777,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 791,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 777,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 791,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 852,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 863,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 878,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 893,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 911,
       "length": 6,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 852,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 863,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 878,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 893,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 911,
       "length": 6,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 852,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 863,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 878,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 893,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 911,
       "length": 6,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 984,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 984,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 984,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 1051,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 1111,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 1175,
       "length": 4,
       "value": "0.15"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 1232,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 1291,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 1345,
       "length": 3,
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "BooleanLiteral",
       "offset": 1421,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 1704,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 1716,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 1761,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 1803,
       "length": 4,
       "value": "18.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 1852,
       "length": 4,
       "value": "24.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 1897,
       "length": 4,
       "value": "14.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 2076,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 2086,
       "length": 3,
       "value": "0.4"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 2150,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 2162,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "BooleanLiteral",
       "offset": 2208,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 2305,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 2368,
       "length": 3,
       "value": "5.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 2533,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 2546,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "BooleanLiteral",
       "offset": 2879,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 3432,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "IntegerLiteral",
       "offset": 3473,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/IHProgressHUD\/Classes\/IHProgressHUD.swift",
       "kind": "FloatLiteral",
       "offset": 3524,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "FloatLiteral",
       "offset": 286,
       "length": 4,
       "value": "63.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "FloatLiteral",
       "offset": 291,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "FloatLiteral",
       "offset": 305,
       "length": 5,
       "value": "153.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "FloatLiteral",
       "offset": 311,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "FloatLiteral",
       "offset": 324,
       "length": 5,
       "value": "191.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "FloatLiteral",
       "offset": 330,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "FloatLiteral",
       "offset": 344,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 390,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 396,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 410,
+      "length": 4,
+      "value": "51.0"
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 415,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 428,
+      "length": 4,
+      "value": "51.0"
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 433,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "kind": "FloatLiteral",
+      "offset": 447,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 381,
+      "offset": 489,
       "length": 20,
       "value": "\"com.digitap.dtokyc\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 439,
+      "offset": 542,
       "length": 8,
       "value": "\"DTOkyc\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 492,
+      "offset": 595,
       "length": 10,
       "value": "\"DTOkycVC\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
-      "kind": "StringLiteral",
-      "offset": 548,
-      "length": 16,
-      "value": "\"AadharDetailVC\""
-    },
-    {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "IntegerLiteral",
-      "offset": 629,
+      "offset": 670,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 664,
+      "offset": 705,
       "length": 11,
       "value": "\"IOS_1.0.3\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 727,
+      "offset": 769,
       "length": 31,
       "value": "\"https:\/\/apidemo.digitap.work\/\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 788,
+      "offset": 831,
       "length": 25,
       "value": "\"https:\/\/api.digitap.ai\/\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 843,
+      "offset": 887,
       "length": 27,
       "value": "\"https:\/\/api.digitap.work\/\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 902,
+      "offset": 947,
       "length": 32,
       "value": "\"https:\/\/apistage.digitap.work\/\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 995,
+      "offset": 1047,
+      "length": 31,
+      "value": "\"https:\/\/svcdemo.digitap.work\/\""
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1109,
+      "length": 25,
+      "value": "\"https:\/\/svc.digitap.ai\/\""
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1165,
+      "length": 30,
+      "value": "\"https:\/\/svc.digitap.work\/v1\/\""
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1228,
+      "length": 32,
+      "value": "\"https:\/\/svcstage.digitap.work\/\""
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1321,
       "length": 15,
       "value": "\"auth\/v1\/login\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 1050,
+      "offset": 1370,
+      "length": 15,
+      "value": "\"auth\/v2\/login\""
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "kind": "StringLiteral",
+      "offset": 1425,
       "length": 74,
       "value": "\"https:\/\/identitytoolkit.googleapis.com\/v1\/accounts:signInWithCustomToken\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 1160,
+      "offset": 1535,
       "length": 19,
       "value": "\"ent\/v1\/kyc\/upload\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 1221,
+      "offset": 1596,
       "length": 30,
       "value": "\"ent\/v1\/kyc\/ent-status-update\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 1295,
+      "offset": 1670,
       "length": 24,
       "value": "\"ent\/v2\/kyc\/get-captcha\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 1358,
+      "offset": 1733,
       "length": 43,
       "value": "\"ent\/v3\/kyc\/get-captcha?isNumeric4Len=true\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 1446,
+      "offset": 1821,
       "length": 32,
       "value": "\"ent\/v2\/kyc\/intiate-api-captcha\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 1518,
+      "offset": 1893,
       "length": 28,
       "value": "\"ent\/v3\/kyc\/intiate-kyc-sdk\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 1589,
+      "offset": 1964,
       "length": 42,
       "value": "\"ent\/v2\/kyc\/post-kyc-otp-paperless-upload\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 1669,
+      "offset": 2044,
       "length": 27,
       "value": "\"ent\/v3\/kyc\/submit-otp-sdk\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 1775,
-      "length": 43,
-      "value": "\"https:\/\/resident.uidai.gov.in\/offline-kyc\""
-    },
-    {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
-      "kind": "StringLiteral",
-      "offset": 1851,
-      "length": 18,
-      "value": "\"?overlayConfig=1\""
-    },
-    {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
-      "kind": "StringLiteral",
-      "offset": 1901,
+      "offset": 2108,
       "length": 16,
       "value": "\"User Cancelled\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 1946,
+      "offset": 2153,
       "length": 13,
       "value": "\"KYC Success\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 1987,
+      "offset": 2194,
       "length": 12,
       "value": "\"KYC Failed\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 2085,
+      "offset": 2292,
       "length": 8,
       "value": "\"DTOkyc\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 2148,
+      "offset": 2355,
       "length": 15,
       "value": "\"AdharDetailVC\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 2216,
+      "offset": 2423,
       "length": 26,
       "value": "\"ErrorAlertViewController\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "StringLiteral",
-      "offset": 2367,
+      "offset": 2574,
       "length": 18,
       "value": "\"okycCommunicator\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "IntegerLiteral",
-      "offset": 2486,
+      "offset": 2693,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "IntegerLiteral",
-      "offset": 2499,
+      "offset": 2706,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Constant\/Constant.swift",
       "kind": "IntegerLiteral",
-      "offset": 2514,
+      "offset": 2721,
       "length": 3,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/ErrorAlertViewController.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/ErrorAlertViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 932,
+      "offset": 1411,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/DTOkycVC.swift",
-      "kind": "StringLiteral",
-      "offset": 523,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/DTOkycVC.swift",
-      "kind": "StringLiteral",
-      "offset": 587,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/DTOkycVC.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/DTOkycVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 620,
+      "offset": 558,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/DTOkycVC.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/DTOkycVC.swift",
       "kind": "StringLiteral",
-      "offset": 772,
+      "offset": 760,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/saikiran\/Documents\/Digitap-Projects\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/DTOkycVC.swift",
+      "filePath": "\/Users\/saikiran\/Documents\/Products\/Okyc\/IOS\/Okyc-IOS-SDK\/Okyc-Sdk\/DTOkyc\/Controller\/DTOkycVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 9092,
+      "offset": 9285,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Library\/Developer\/Xcode\/DerivedData\/Okyc-IOS-SDK-fvixgulabdflbncvrxrskjzyecuy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DTOkyc\/IntermediateBuildFilesPath\/DTOkyc.build\/Release-iphoneos\/DTOkyc.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 734,
+      "length": 13,
+      "value": "\"button-back\""
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Library\/Developer\/Xcode\/DerivedData\/Okyc-IOS-SDK-fvixgulabdflbncvrxrskjzyecuy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DTOkyc\/IntermediateBuildFilesPath\/DTOkyc.build\/Release-iphoneos\/DTOkyc.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 878,
+      "length": 13,
+      "value": "\"icon_reload\""
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Library\/Developer\/Xcode\/DerivedData\/Okyc-IOS-SDK-fvixgulabdflbncvrxrskjzyecuy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DTOkyc\/IntermediateBuildFilesPath\/DTOkyc.build\/Release-iphoneos\/DTOkyc.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1018,
+      "length": 11,
+      "value": "\"info_icon\""
+    },
+    {
+      "filePath": "\/Users\/saikiran\/Library\/Developer\/Xcode\/DerivedData\/Okyc-IOS-SDK-fvixgulabdflbncvrxrskjzyecuy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DTOkyc\/IntermediateBuildFilesPath\/DTOkyc.build\/Release-iphoneos\/DTOkyc.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1153,
+      "length": 9,
+      "value": "\"warning\""
     }
   ]
 }

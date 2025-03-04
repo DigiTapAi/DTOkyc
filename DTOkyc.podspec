@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DTOkyc"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "DTOkyc is for doing offline-kyc."
 
   # This description is used to generate tags and improve search results.
@@ -98,7 +98,7 @@ DTOkyc is for doing offline-kyc. It is same like doing in UIDAI website
 
   #spec.source_files = 'DTOkyc.framework/Headers/*.h'
   #spec.public_header_files = "DTOkyc.framework/Headers/*.h"
-  spec.ios.vendored_frameworks = "DTOkyc.xcframework"
+  spec.vendored_frameworks = "DTOkyc.xcframework"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
